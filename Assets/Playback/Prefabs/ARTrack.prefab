@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8531192210807583147
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8531192210807583145}
+  - component: {fileID: 8531192210807583146}
+  - component: {fileID: 8531192210807583144}
+  - component: {fileID: 1470569981}
+  m_Layer: 0
+  m_Name: ARTrack
+  m_TagString: GameController
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8531192210807583145
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8531192210807583147}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8531192210807583146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8531192210807583147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9509e89bbf814282a9e2d4fa1b5f7e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ProjectPath: 
+  ArmTrack: 0
+  FPS: 60
+  RecordingFrameStep: 60
+  ExitOnFinish: 1
+  RenderARFrameObjects: 1
+  ListOfCameras:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  ListOfRenderTextures:
+  - {fileID: 8400000, guid: fa04bfbc3d81c1447acf2b6fb535b823, type: 2}
+  - {fileID: 8400000, guid: 3ee15149069f3044b94303066e12a0cb, type: 2}
+  - {fileID: 8400000, guid: 62551edb4bef1af41a76d5df58e506bb, type: 2}
+  - {fileID: 8400000, guid: fdac0779e47798a4899330fd1c2af44a, type: 2}
+  OnFrame:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAnchor:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &8531192210807583144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8531192210807583147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eebb94b5b755452c9e9b20856d34083, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ProjectCamera: {fileID: 0}
+  ColorTexture: {fileID: 8400000, guid: 9b3ba8343583a43a08aa33e831989adb, type: 2}
+  DepthTexture: {fileID: 8400000, guid: e699022e8eb6f45ffb11e5deb73c5ff0, type: 2}
+--- !u!114 &1470569981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8531192210807583147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c05881307d030eb42af26af201c9dff4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

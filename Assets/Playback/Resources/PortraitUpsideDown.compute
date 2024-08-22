@@ -1,0 +1,19 @@
+#pragma kernel CSMain
+
+RWTexture2D<float4> Input;
+RWTexture2D<float4> Output;
+
+int Width;
+int Height;
+
+[numthreads(8, 8, 1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    if (id.x < Width && id.y < Height)
+    {
+        int u = Height - id.y;
+        int v = id.x;
+
+        Output[int2(u, v)] = Input[id.xy];
+    }
+}
